@@ -7,8 +7,8 @@ In particular, this function is used as a building block for the
 [FastCDC](https://www.usenix.org/node/196197) algorithm.
 
 The implementation provided in this crate consists of both a simple,
-scalar variant, as well as optimized versions for the SSE4.2 and AVX2
-instruction sets.
+scalar variant, as well as optimized versions for the SSE4.2, AVX2
+and Neon (not well tested) instruction sets.
 
 ## Usage
 
