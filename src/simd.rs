@@ -16,7 +16,7 @@ pub(crate) fn next_match(hash: &mut u64, table: &Table, buf: &[u8], mask: u64) -
         } else if #[cfg(any(target_arch = "aarch64"))] {
                 return unsafe { neon::next_match(hash, table, buf, mask) };
         } else {
-            crate::scalar::next_match(hash, table, buf, mask)
+            crate::scalar::next_match_4x_idx(hash, table, buf, mask)
         }
     }
 }
